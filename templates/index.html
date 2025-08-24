@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College SentiMark</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="static\css\sent.jpg" alt="Logo not Found">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="#about">About Us</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="mailto:info.smartech4u@gmail.com" target="_main">Contact</a>
+        </div>
+    </header>
+    <section>
+        <div class="center">
+            <h1>Welcome to College Sentimark</h1>
+            <div class="review-section">
+                    <button>
+                        <a href="{{ url_for('reviews') }}" class="button">Get Review</a>
+                    </button><br><br>
+                    <button>
+                        <a href="{{ url_for('submit_review') }}" class="button">Submit Review</a>
+                    </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+    </footer>
+</body>
+</html>

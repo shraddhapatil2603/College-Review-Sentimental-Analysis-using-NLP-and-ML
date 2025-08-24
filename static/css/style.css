@@ -1,0 +1,132 @@
+body {
+    text-align: center;
+    font-family: Arial;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* header section */
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    padding-bottom: 20px;
+    background: url(Background1.png) no-repeat center center/cover;
+}
+
+img {
+    margin-right: 350px;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+.nav{
+    font-size: 1.3rem;
+    padding-top: 05px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav a{
+    padding: 08px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: all 0.2s linear 0s;
+}
+
+.nav a:hover {
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: red;
+    transform: scale(1.2);
+}
+
+/* main section */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-color: #e2e7e6;
+    /* background: url(2.jpg) no-repeat center center/cover; */
+    padding: 20%;
+    padding-top: 20px;
+}
+
+.review-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review-section a{
+    text-align: center;
+    text-decoration: none;
+    border-color: white;
+    transition: 0.3s;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    transition: all 0.2s linear 0s;
+}
+
+.review-section a:hover{
+    border-top-color: var(--secondary-color);
+    border-bottom-color: var(--secondary-color);
+    color: red ;
+    font-size: 2.3rem;
+}
+
+.center h1{
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+}
+
+button {
+    background: none;
+    padding: 20px 20px;
+    color: black;
+    font-size: 25px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Footer section */
+
+footer {
+    height: 40px;
+    background: #222f3d;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 0px 10px;
+    border-radius: 10px;
+}
+    
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+footer a:hover {
+    text-decoration: underline;
+}

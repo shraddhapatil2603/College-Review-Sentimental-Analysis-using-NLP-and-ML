@@ -1,0 +1,37 @@
+<!DOCTYPE html>-–
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/register_style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <img src="static\css\sent.jpg" alt="Logo not Found">
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="#about">About Us</a>
+            <a href="{{ url_for('login') }}">Login</a>
+            <a href="mailto:info.smartech4u@gmail.com" target="_main">Contact</a>
+        </div>
+    </header>
+   <section>
+    <div class="x">
+        <h2>Register</h2>
+        <form method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required><br>
+            <input type="text" name="middle_name" placeholder="Middle Name"><br>
+            <input type="text" name="last_name" placeholder="Last Name" required><br>
+            <input type="text" name="contact" placeholder="Contact" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <a href="{{ url_for('login') }}">Already have an account? Login</a>
+    </div>
+   </section>
+    <footer>
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved </p>
+    </footer>
+</body>
+</html>
